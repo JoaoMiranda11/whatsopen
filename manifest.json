@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Salvar URLs das Abas",
+  "version": "1.0",
+  "description": "Salva um arquivo TXT com as URLs de todas as abas abertas na janela atual.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "downloads"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

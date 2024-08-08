@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de URLs das Abas</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8;
+        color: #333;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 26px;
+        min-width: 420px;
+      }
+      button {
+        padding: 12px 24px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-bottom: 10px;
+        width: clamp(200px, 100%, 360px);
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      #status {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #28a745;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="save">Salvar URLs das Abas</button>
+    <button id="copy">Copiar URLs</button>
+    <div id="status">Pronto</div>
+    <script src="popup.js"></script>
+  </body>
+</html>
